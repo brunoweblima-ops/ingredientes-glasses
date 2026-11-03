@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Leitor de Ingredientes</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main>
+    <h1>Ingredientes</h1>
+
+    <video id="camera" autoplay playsinline muted></video>
+
+    <div id="status">A iniciar câmara…</div>
+
+    <button id="capture">Ler ingredientes</button>
+
+    <section id="result" hidden>
+      <h2>Texto detetado</h2>
+      <ul id="ingredients"></ul>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
