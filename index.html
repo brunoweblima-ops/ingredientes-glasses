@@ -3,22 +3,24 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Leitor de Ingredientes</title>
+  <title>Checklist de Pedido</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <main>
-    <h1>Ingredientes</h1>
+    <header>
+      <h1 id="title">Ler pedido</h1>
+      <div id="progress">0 / 0</div>
+    </header>
 
     <video id="camera" autoplay playsinline muted></video>
 
-    <div id="status">A iniciar câmara…</div>
+    <div id="status">Aponta para o pedido e lê.</div>
 
-    <button id="capture">Ler ingredientes</button>
+    <button id="capture">Ler pedido</button>
 
-    <section id="result" hidden>
-      <h2>Texto detetado</h2>
-      <ul id="ingredients"></ul>
+    <section id="order" hidden>
+      <div id="categories"></div>
     </section>
   </main>
 
